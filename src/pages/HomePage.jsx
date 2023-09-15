@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Poster from "../assets/poster.svg";
-import Logo from "../assets/logo.png";
+// import Logo from "../assets/logo.png";
 import hamButton from "../assets/Menu.png";
 import Right from "../assets/Chevron_right.png";
 import Play from "../assets/Plays.png";
@@ -84,22 +84,27 @@ function HomePage() {
       >
         <header>
           <div className="flex items-center justify-between w-full lg:py-10 lg:px-40 px-10 py-4">
-            <img src={Logo} alt="" className="cursor-pointer hidden md:flex" />
-            <img
-              src={LogoImg}
-              alt="Only logo"
-              className="cursor-pointer flex md:hidden w-5 h-5"
-            />
+            {/* <img src={Logo} alt="" className="cursor-pointer hidden md:flex" /> */}
+            <div className="flex justify-start items-center ">
+              <img
+                src={LogoImg}
+                alt="Only logo"
+                className="cursor-pointer mr-2 md:mr-8  w-5 h-5 md:w-full md:h-full"
+              />
+              <span className="text-xs md:text-xl text-white font-bold">
+                MovieBox
+              </span>
+            </div>
             <div className="relative text-xs md:text-base flex items-center">
               <input
                 type="text"
                 placeholder="What do you want to watch?"
-                className="lg:h-10 h-6 md:w-96 w-1/2 rounded-md border md:border-2 md:border-solid px-3 py-2 text-white bg-transparent"
+                className="lg:h-10 h-6 md:w-96 w-3/4 rounded-md border md:border-2 md:border-solid px-3 py-2 text-white bg-transparent"
                 onChange={(e) => setSearchQuery(e.target.value)}
                 value={searchQuery}
               />
               <div onClick={handleSearch}>
-                <SearchIcon className="absolute md:right-4 md:-top-1 translate-y-1/2 text-white cursor-pointer" />
+                <SearchIcon className="w-4 h-4 md:w-full md:h-full absolute -top-3 right-10 only:md:right-4 md:-top-1 translate-y-1/2 text-white cursor-pointer" />
               </div>
             </div>
             <div className="flex justify-center items-center md:gap-x-3">
