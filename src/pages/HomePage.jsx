@@ -152,7 +152,7 @@ function HomePage() {
                       </section>
                     </div>
                   )}
-                <div className="flex justify-between items-center mx-10 lg:mx-40 mt-24 lg:mt-40">
+                <div className="flex justify-between items-center mx-10 lg:mx-40 mt-24 lg:mt-48">
                   <h1 className="text-left text-lg lg:text-3xl lg:mb-4 text-textMain font-bold">
                     Featured Movie
                   </h1>
