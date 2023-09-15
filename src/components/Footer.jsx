@@ -19,7 +19,7 @@ function Footer() {
         <p>Press Room</p>
       </div>
       <p className="text-textMinor font-bold text-base mb-10">
-        © 2021 <span>Movie Discovery App</span> by <span>Khay</span>
+        © 2021 <span>Movie Discovery App</span> by <span>Tolani Emmanuel</span>
       </p>
     </footer>
   );
